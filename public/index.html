@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student-Teacher Booking</title>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Book an Appointment</h1>
+  <input id="studentName" placeholder="Student Name" /><br>
+  <input id="teacherName" placeholder="Teacher Name" /><br>
+  <input id="appointmentTime" placeholder="Appointment Time" /><br>
+  <button onclick="bookAppointment()">Book Appointment</button>
+
+  <br><br>
+  <button onclick="selectRole('student')">I am a Student</button>
+  <button onclick="selectRole('teacher')">I am a Teacher</button>
+  <button onclick="viewAppointments()">View My Appointments</button>
+<div id="appointmentsList"></div>
+
+</body>
+</html>
+
